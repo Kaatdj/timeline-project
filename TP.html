@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Timeline Project</title>
+        <link rel="stylesheet" href="TP.css">
+        <link rel="icon" href="afbeelding1.png">
+    </head>
+
+    <body>
+        <div class="bovenbalk">
+            <div>
+                <p class="logo">TP</p>
+                <h2 class="onderwerp">TimelineProject</h2>
+                <p class="hori-lijn"></p>
+                <div class="happy-meter">
+                    <p class="onderwerp">Do you feel <span>happy</span> today?</p>
+                    <input type="checkbox">
+                </div>
+
+            </div>
+        </div>
+
+        <div class="lichaam">
+            <p class="line"></p>
+            <div class="timeline">
+                <button title="onderwerp 1" onclick="location.href='#onderwerp1'"></button>
+                <button title="onderwerp 2" onclick="location.href='#onderwerp2'"></button>
+                <button title="onderwerp 3" onclick="location.href='#onderwerp3'"></button>
+                <button title="onderwerp 4" onclick="location.href='#onderwerp4'"></button>
+            </div>
+        </div>
+
+        <div class="body-submit">
+            <div class="submit">
+                <h2 class="onderwerp-submit">add event</h2>
+                <label for="event"><span class="onderwerp-submit">naam event:</span></label>
+                <input id=event type="text" placeholder="event" required>
+                <label for="datum"><span class="onderwerp-submit">datum:</span></label>
+                <input id=datum type="date" placeholder="datum" required>
+                <label for="categorie"><span class="onderwerp-submit">select domein</span></label>
+                <select id="categorie">
+                    <option value="Unif">HIRB</option>
+                    <option value="GHC">GHC</option>
+                    <option value="self-impo">belangrijk</option>
+                    <option value="random">random</option>
+                </select>
+                <button class="submit-button" onclick="addEvent()"><span class="onderwerp">submit</span></button>
+
+            </div>
+        </div>
+        <a href="bla"><button>
+
+        </button></a>
+        
+        <!--
+        <div class="events-list" id="eventsList">
+            <h2>Events List</h2>
+        </div>
+        
+        <script>
+            // Array to hold events
+            let events = [];
+
+            function addEvent() {
+                // Get the input values
+                const eventName = document.getElementById('event').value;
+                const eventDate = document.getElementById('datum').value;
+                const eventCategory = document.getElementById('categorie').value;
+
+                // Create an event object
+                const eventObj = {
+                    name: eventName,
+                    date: new Date(eventDate), // Convert to Date object for sorting
+                    category: eventCategory
+                };
+
+                // Add the event to the events array
+                events.push(eventObj);
+
+                // Sort the events by date
+                events.sort((a, b) => a.date - b.date);
+
+                // Clear the events list and display sorted events
+                displayEvents();
+
+                // Clear the input fields after submission
+                document.getElementById('event').value = '';
+                document.getElementById('datum').value = '';
+                document.getElementById('categorie').value = 'Unif'; // Reset to first option
+            }
+
+            function displayEvents() {
+                // Get the events list container
+                const eventsList = document.getElementById('eventsList');
+                // Clear the current list
+                eventsList.innerHTML = '<h2>Events List</h2>'; // Reset the heading
+
+                // Loop through the events array and create a list item for each
+                events.forEach(event => {
+                    const eventItem = document.createElement('div');
+                    eventItem.classList.add('event-item');
+                    eventItem.textContent = `${event.name} - ${event.date.toLocaleDateString()} - ${event.category}`;
+                    eventsList.appendChild(eventItem);
+                });
+            }
+        </script>-->
+
+        <div class="grid">
+            <div class="event1" id="onderwerp1">
+                <p class="event-titel"><b>onderwerp 1</b></p>
+                <img class="afbeelding" src="afbeelding1.png">
+                <div class="rel-info">
+                    <p>locatie</p>
+                    <p>datum</p>
+                    <p>uur</p>
+                </div>
+                <p class="extra-event-info-titel">extra info<p>
+                    <p class="extra-event-info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis commodi natus cumque incidunt amet ratione voluptatem sit dolorem inventore! Reprehenderit voluptas iusto aspernatur nisi aliquid suscipit cum, placeat optio quaerat.</p>
+            </div>
+            
+            <div class="event2">
+                <p class="event-titel" id="onderwerp2"><b>onderwerp 2</b></p>
+                <img class="afbeelding" src="afbeelding1.png">
+                <div class="rel-info">
+                    <p>locatie</p>
+                    <p>datum</p>
+                    <p>uur</p>
+                </div>
+                <p class="extra-event-info-titel">extra info<p>
+                    <p class="extra-event-info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis commodi natus cumque incidunt amet ratione voluptatem sit dolorem inventore! Reprehenderit voluptas iusto aspernatur nisi aliquid suscipit cum, placeat optio quaerat.</p>
+            </div>
+            
+            <div class="event1">
+                <p class="event-titel" id="onderwerp3"><b>onderwerp 3</b></p>
+                <img class="afbeelding" src="afbeelding1.png">
+                <div class="rel-info">
+                    <p>locatie</p>
+                    <p>datum</p>
+                    <p>uur</p>
+                </div>
+                <p class="extra-event-info-titel">extra info<p>
+                    <p class="extra-event-info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis commodi natus cumque incidunt amet ratione voluptatem sit dolorem inventore! Reprehenderit voluptas iusto aspernatur nisi aliquid suscipit cum, placeat optio quaerat.</p>
+            </div>
+            
+            <div class="event2">
+                <p class="event-titel" id="onderwerp4"><b>onderwerp 4</b></p>
+                <img class="afbeelding" src="afbeelding1.png">
+                <div class="rel-info">
+                    <p>locatie</p>
+                    <p>datum</p>
+                    <p>uur</p>
+                </div>
+                <p class="extra-event-info-titel">extra info<p>
+                <p class="extra-event-info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis commodi natus cumque incidunt amet ratione voluptatem sit dolorem inventore! Reprehenderit voluptas iusto aspernatur nisi aliquid suscipit cum, placeat optio quaerat.</p>
+            </div>
+        </div>
+        
+        <div class="benedendoos">
+            <h2 class="onderwerp">Legende</h2>
+            <div class="legende">
+                <div class="legendeobject">
+                    <div class="color1"></div>
+                    <div class="onderwerp">GHC</div>
+                </div>
+                <div class="legendeobject">
+                    <div class="color2"></div>
+                    <div class="onderwerp">HIRB</div>
+                </div>
+                <div class="legendeobject">
+                    <div class="color3"></div>
+                    <div class="onderwerp">niet te vergeten!</div>
+                </div>
+                <div class="legendeobject">
+                    <div class="color4"></div>
+                    <div class="onderwerp">random</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

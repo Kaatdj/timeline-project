@@ -1,0 +1,223 @@
+            .bovenbalk {
+                position: fixed;
+                z-index: 30;
+                background-color: rgb(30, 56, 105);
+                top: 0;
+                left: 0;
+                right: 0;
+            }
+
+            .logo {
+                display: inline-block;
+                background-color: beige;
+                border-radius: 5px;
+                padding: 3px;
+                margin-right: 10px;
+                margin-left: 20px;
+                color:rgb(30, 56, 105);
+                font-style: bold;
+                font-family: Arial;
+                font-size: 30px;
+            }
+
+            .hori-lijn {
+                background-color: beige;
+                height: 30px;
+                width: 3px;
+                position: absolute;
+                top: 20px;
+                margin-left: 5px;
+                margin-right: 5px;
+                border-radius: 10px;
+            }
+
+            .happy-meter {
+                margin-left: 700px;
+            }
+
+            .happy-meter, .onderwerp, .hori-lijn {
+                display: inline-block;
+            }
+
+            .lichaam {
+                position: relative;
+                
+            }
+
+            .line {
+                position: absolute;
+                z-index: 0;
+                background-color: rgb(30, 56, 105);
+                height: 5px;
+                top: -8px;
+                left: 110px;
+                right: 110px;
+            }
+
+            .timeline {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin-left: 100px;
+                margin-right: 100px;
+                margin-top: 150px;
+                margin-bottom: 100px;
+            }
+
+            button {
+                border-radius: 10px;
+                border: none;
+                z-index: 3;
+                background-color: rgb(30, 56, 105);
+                padding: 10px;
+            }
+
+            .body-submit {
+                text-align: center;
+            }
+
+            .submit {
+                border-color: rgb(30, 56, 105);
+                border-radius: 10px;
+                border-width: 2px;
+                border-style: solid;
+                padding: 5px;
+                display: inline-block;
+                text-align: start;
+            }
+
+            .submit-button {
+                border-radius: 2px;
+                border: none;
+                z-index: 3;
+                background-color: rgb(30, 56, 105);
+                padding: 4px;
+            }
+
+
+            .grid {
+                display: grid;
+                grid-template-columns: 1fr;
+                row-gap: 50px;
+                justify-content: center; /* Horizontaal centreren */
+                margin-top: 50px;
+                margin-bottom: 50px;
+            }
+
+            .event1 {
+                background-color: rgb(185, 110, 110);
+                border-radius: 20px ;
+                padding: 40px;
+                width: 80%;
+                justify-self: start; /* Linkeruitlijning */
+            }
+
+            #onderwerp1, #onderwerp2, #onderwerp3, #onderwerp4 {
+                scroll-margin-top: 150px; /* Adjust this value based on your header height */
+            }
+
+            .event2 {
+                background-color: rgb(110, 185, 165);
+                border-radius: 20px ;
+                padding: 40px;
+                width: 80%;    
+                justify-self: end; /* Rechteruitlijning */        
+            }
+
+            .event-titel {
+                font-family: arial;
+                font-size: 30px;
+                color:rgb(30, 56, 105);
+            }
+
+            img {
+                vertical-align: middle;
+            }
+            .rel-info {
+                background-color: rgb(30, 56, 105);
+                font-family: arial;
+                font-size: 20px;
+                color:beige;
+                border-radius: 20px;
+                padding: 10px;
+                display: inline-block;
+                vertical-align: middle;
+                padding-left:20px;
+                padding-right: 200px;
+                margin-left: 50px;
+            }
+
+            .extra-event-info-titel {
+                color: beige;
+                font-family: arial;
+                font-size: 25px;
+            }
+
+            .extra-event-info {
+                color: beige;
+                font-family: arial;
+                font-size: 15px;
+            }
+
+            .benedendoos {
+                position: relative;
+                background-color: rgb(30, 56, 105);
+                padding: 40px;
+                padding-top: 20px;
+                bottom: 0;
+                left: 0;
+                right: 0;
+            }
+
+            .legende {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                gap: 20px; /* Optional: adds space between legend items */
+                width: 100%;
+            }
+            
+            .legendeobject {
+                display: flex;
+                justify-content: space-between;
+                align-items: center; /* Vertically center the color and text */
+                gap: 10px; /* Adds space between the color block and the name */
+            }
+            
+            .color1, .color2, .color3, .color4 {
+                width: 20px; /* Size of the color box */
+                height: 20px;
+                border-radius: 3px; /* Slightly rounded corners */
+            }
+
+            .color1 {
+                background-color: rgb(185, 110, 110);
+
+            }
+
+            .color2 {
+                background-color: rgb(110, 185, 165);
+
+            }
+
+            .color3 {
+                background-color: rgb(110, 125, 185);
+
+            }
+
+            .color4 {
+                background-color: rgb(103, 146, 122);
+
+            }
+
+            .onderwerp {
+                color:beige;
+                font-family: Arial;
+                font-style: bold;
+            }
+
+            .onderwerp-submit {
+                color: rgb(30, 56, 105);
+                font-family: Arial;
+                font-style: bold;
+            }
