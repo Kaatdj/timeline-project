@@ -32,10 +32,6 @@
                 border-radius: 10px;
             }
 
-            .happy-meter {
-                margin-left: 700px;
-            }
-
             .happy-meter, .onderwerp, .hori-lijn {
                 display: inline-block;
             }
